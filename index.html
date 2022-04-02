@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible"
+        content="IE=edge">
+    <meta name="viewport"
+        content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet"
+        href="./css/style.css">
+    <script src="./scripts/index.js"
+        defer></script>
+    <title>Editor</title>
+</head>
+
+<body>
+    <section class="wrap canvas">
+        <div class="canvas__container">
+            <div>
+                <canvas class='canvas__main'
+                    id='canvas'></canvas>
+            </div>
+            <div>
+                <form class='canvas__painting-tools'>
+                    <b>Choose a marker color:</b>
+                    <input type="color"
+                        name='canvas-color'
+                        id='canvasColor'>
+                    <b>Choose the thickness of the brush:</b>
+                    <input type="range"
+                        name='canvas-range'
+                        id='canvasRange'
+                        value='1'
+                        min="1"
+                        max="100">
+                </form>
+            </div>
+        </div>
+    </section>
+</body>
+
+</html>
